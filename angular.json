@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "pruebaTecnicaFrontend"
+    }
+  },
+  "defaultProject": "pruebaTecnicaFrontend",
+  "cli": {
+    "analytics": "b1bbb710-dc36-427a-b65a-a94a37631788"
+  }
 }

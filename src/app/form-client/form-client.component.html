@@ -1,0 +1,29 @@
+<app-top-bar></app-top-bar>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Promedio de edades: {{clientKpi.averageAge}}</h3>
+            <h3>Desviación estandar de edades: {{clientKpi.standardDeviation}}</h3>
+        </div>
+        <div class="col-md-12">
+            <h1 class="table-title">Formulario de salida</h1>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Edad</th>
+                    <th>Detalle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let client of clients">
+                    <td>{{client.name + ' ' + client.lastName}}</td>
+                    <td>{{client.age}}</td>
+                    <td> <div class="btn btn-primary" (click)="goDetail(client)">Ver Detalle</div></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
